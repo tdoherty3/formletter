@@ -5,8 +5,9 @@ $(document).ready(function() {
     var animalInput= $("input#animal").val();
     var exclamationInput = $("input#exclamation").val();
     var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
-
+    var nounInput = $("input#noun").val().toUpperCase();
+    console.log(nounInput);
+    
     $(".person1").text(person1Input);
     $(".person2").text(person2Input);
     $(".animal").text(animalInput);
